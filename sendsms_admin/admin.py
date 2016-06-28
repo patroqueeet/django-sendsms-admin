@@ -31,6 +31,7 @@ class SendSmsMessageForm(forms.ModelForm):
         widgets = {
             'to_phones': forms.TextInput(attrs={'size': '80'}),
         }
+        fields = "__all_"
 
 class SendSmsMessageAdmin(admin.ModelAdmin):
     form = SendSmsMessageForm
